@@ -1,0 +1,12 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page import="com.Group2Project.UserSite.Page"%>
+<%@ page pageEncoding="UTF-8" %>
+<header>
+    <h1>
+        <%
+            Page pageController = (Page) request.getAttribute("page"); 
+            out.println(pageController.outputContentText("siteHeading1"));
+        %>
+    </h1>
+    
+</header>

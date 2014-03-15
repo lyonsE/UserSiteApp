@@ -1,0 +1,20 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page import="com.Group2Project.UserSite.Site"%>
+<%@ page pageEncoding="UTF-8" %>
+<nav>
+    <ul>
+        
+    
+    <%
+        //GetSite
+        Site site = (Site) request.getAttribute("site");
+        String[][] pageNames = site.getPageNames();
+        
+        for (int i=0; i<pageNames.length; i++){
+            out.println("<a href =\"/"+pageNames[i][1]+ "\" >" + pageNames[i][0] + "</a>");
+        }
+        //GetPageList
+        //output <a>s
+    %>
+    </ul>
+</nav>

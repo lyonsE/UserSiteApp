@@ -6,7 +6,10 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>UserSiteServlet</servlet-name>
-        <url-pattern>/Home</url-pattern>
+        <url-pattern></url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/homePage</url-pattern>
+        <url-pattern>/gallery</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

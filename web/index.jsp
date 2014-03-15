@@ -12,12 +12,13 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        
+        <%@include file="WEB-INF/jspf/siteHeader.jspf" %>
+        <%@include file="WEB-INF/jspf/siteNav.jspf" %>
         <%
-            out.println((String) request.getAttribute("site"));
-            
-            %>
+            out.println( "<p>URL: " +(String) request.getAttribute("siteURL") + "</p>");
+            out.println("<p>Database Name: " + (String) request.getAttribute("dbName")+ "</p>");
+            out.println("<p>PageName: " + (String) request.getAttribute("pageName")+ "</p>");
+        %>
     </body>
     
 </html>
